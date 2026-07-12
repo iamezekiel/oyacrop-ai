@@ -24,8 +24,7 @@ const Result = () => {
       {/* Main Image Banner */}
       <div className={resultStyles.imageWrapper}>
         <img
-          src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=600"
-          alt="Cassava leaves"
+          src="/public/result-panel.jpeg"
           className={resultStyles.bannerImage}
         />
       </div>

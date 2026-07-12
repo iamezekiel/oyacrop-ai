@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #0e3b1e;
+  color: #f5f7f5f1;
+  padding: 20px;
+}
+
+/* sidebar logo styling starts */
+.sideTop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topLogoInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.topLogoInfo h3 {
+  font-size: 18px;
+  color: #f5f7f5f1;
+  font-weight: 500;
+}
+
+.topLogoInfo p {
+  font-size: 12px;
+}
+
+.topAnalysisBtn {
+  background-color: #4caf50;
+  color: #f5f7f5f1;
+  padding: 14px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.topLogo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* sidebar logo styling starts */
+
+/* side menu(links) styling starts */
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.menuItem {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #f5f7f5f1;
+  align-items: center;
+}
+
+.menuItem:hover {
+  /* background-color: #2e7d32; */
+  background-color: #246d3d;
+  border-radius: 12px;
+}
+/* side menu(links) styling ends */
+
+/* side card styling starts */
+.sideCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background-color: #246d3d7c;
+  border: 1px solid #f5f7f550;
+  border-radius: 15px;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.sideCard h3 {
+  font-size: 16px;
+  color: #f5f7f5f1;
+  font-weight: 500;
+}
+
+.sideCard p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.sideCard img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 130px;
+}
+/* side card styling ends */
+
+/* line */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #f5f7f550;
+}
+
+/* side profile styling starts */
+.sideProfiles {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.sideProfileMain {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.userProfileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.userProfileInfo h3 {
+  font-size: 15px;
+  color: #f5f7f5f1;
+  font-weight: 500;
+}
+
+.userProfileInfo p {
+  font-size: 12px;
+  color: #f5f7f5f1;
+}
+
+.userProfileMore {
+  cursor: pointer;
+}
+
+.sideProfiles img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+/* side profile styling ends */

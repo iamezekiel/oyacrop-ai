@@ -1,13 +1,20 @@
 import Sidebar from "../../component/sidebar/Sidebar";
 import Result from "../../component/resultPanel/Result";
+import Header from "../../component/header/Header";
+import Chatbox from "../../component/chatbox/Chatbox";
+import dashboardStyles from "./dashboard.module.css";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to the dashboard!</p>
+    <div className={`${dashboardStyles.dashboard}`}>
       <Sidebar />
-      <Result />
+      <div className={`${dashboardStyles.mainContent}`}>
+        <Header />
+        <div className={`${dashboardStyles.content}`}>
+          <Chatbox />
+          <Result />
+        </div>
+      </div>
     </div>
   );
 };
