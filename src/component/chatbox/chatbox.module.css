@@ -252,15 +252,19 @@
   gap: 10px;
 }
 
-.chatInput .chatInputImg {
-  padding: 10px;
-  border-radius: 15px;
+/* image  */
+.imageUpload {
+  width: 48px;
+  height: 48px;
   background-color: #eff1ef;
-  border: none;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
 
-.chatInputImg i {
+.imageUpload i {
+  cursor: pointer;
   font-size: 20px;
   display: flex;
   align-self: center;
@@ -278,15 +282,20 @@
 }
 
 /* chatinput(send-icon) */
-.chatInput .chatInputSend {
-  padding: 10px;
+.chatInputSend {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
   background-color: #1f7a34;
   border: none;
-  cursor: pointer;
+  outline: none;
 }
 
 .chatInputSend i {
+  cursor: pointer;
   font-size: 20px;
   display: flex;
   align-self: center;

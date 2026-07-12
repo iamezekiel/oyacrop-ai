@@ -48,7 +48,7 @@ const Sidebar = () => {
 
       <div className={`${sidebarStyles.sideCard}`}>
         <img src="/sideBar.jpeg" alt="image-of-a-plant" />
-        <h3>Ai for better harvest</h3>
+        <h3>AI for better harvest</h3>
         <p>
           Get accurate insights about your crops and make smarter farming
           decisions

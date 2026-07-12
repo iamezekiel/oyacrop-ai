@@ -88,9 +88,13 @@ const Chatbox = () => {
       <div className={`${chatboxStyles.line}`}></div>
 
       <div className={`${chatboxStyles.chatInput}`}>
-        <button className={`${chatboxStyles.chatInputImg}`}>
-          <i class="fa-solid fa-image"></i>
-        </button>
+        <div className={`${chatboxStyles.imageUpload}`}>
+          <label htmlFor="imageUpload" className={`${chatboxStyles.imgBtn}`}>
+            <i className="fa-regular fa-image"></i>
+          </label>
+
+          <input type="file" id="imageUpload" accept="image/" hidden />
+        </div>
 
         <input
           type="text"
