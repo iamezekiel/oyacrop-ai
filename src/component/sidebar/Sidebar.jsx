@@ -1,9 +1,13 @@
 import sidebarStyles from "./sidebar.module.css";
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   return (
-    <div className={`${sidebarStyles.sidebar}`}>
+    <div
+      className={`${sidebarStyles.sidebar} ${
+        isOpen ? sidebarStyles.sidebarOpen : ""
+      }`}
+    >
       <div className={`${sidebarStyles.sideTop}`}>
         <div className={`${sidebarStyles.topLogo}`}>
           <img src="/logo.jpeg" alt="logo-image" />
@@ -14,34 +18,36 @@ const Sidebar = () => {
         </div>
 
         <button className={`${sidebarStyles.topAnalysisBtn}`}>
-          <i class="fa fa-plus" aria-hidden="true"></i>
+          <i className="fa fa-plus" aria-hidden="true"></i>
           <p>New Analysis</p>
         </button>
+
+        <i className="fa-solid fa-square-xmark"></i>
       </div>
 
       <div className={`${sidebarStyles.sideMenu}`}>
         <Link to="/chat" className={`${sidebarStyles.menuItem}`}>
-          <i class="fa fa-comment" aria-hidden="true"></i>
+          <i className="fa fa-comment" aria-hidden="true"></i>
           <span>Chat Assistant</span>
         </Link>
 
         <Link to="/dashboard" className={`${sidebarStyles.menuItem}`}>
-          <i class="fa fa-table" aria-hidden="true"></i>
+          <i className="fa fa-table" aria-hidden="true"></i>
           <span>Dashboard</span>
         </Link>
 
         <Link to="/history" className={`${sidebarStyles.menuItem}`}>
-          <i class="fa fa-history" aria-hidden="true"></i>
+          <i className="fa fa-history" aria-hidden="true"></i>
           <span>History</span>
         </Link>
 
         <Link to="/setting" className={`${sidebarStyles.menuItem}`}>
-          <i class="fa fa-cog" aria-hidden="true"></i>
+          <i className="fa fa-cog" aria-hidden="true"></i>
           <span>Settings</span>
         </Link>
 
         <Link to="/notification" className={`${sidebarStyles.menuItem}`}>
-          <i class="fa-regular fa-bell"></i>
+          <i className="fa-regular fa-bell"></i>
           <span>Notifications</span>
         </Link>
       </div>
@@ -66,7 +72,7 @@ const Sidebar = () => {
           </div>
 
           <div className={`${sidebarStyles.userProfileMore}`}>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i className="fa fa-chevron-down" aria-hidden="true"></i>
           </div>
         </div>
       </div>

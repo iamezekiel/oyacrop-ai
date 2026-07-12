@@ -22,7 +22,18 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
   padding: 20px;
+}
+
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
 }

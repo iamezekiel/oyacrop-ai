@@ -5,6 +5,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+.mobileHeader {
+  display: none;
+}
+
+.hambuger {
+  display: none;
+}
+
+/* header styling starts */
 .header {
   display: flex;
   justify-content: space-between;
@@ -95,4 +104,77 @@
   position: absolute;
   top: -9px;
   left: 9px;
+}
+
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .location {
+    display: none;
+  }
+
+  .weather {
+    display: none;
+  }
+
+  .hambuger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hambuger div {
+    background-color: #f5f7f5f1;
+    width: 16px;
+    height: 2px;
+  }
+
+  /* small screen header starts */
+  .mobileHeader {
+    display: flex;
+    background-color: #1f7a34;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .topLogo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .topLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .topLogoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .topLogoInfo h3 {
+    font-size: 18px;
+    color: #f5f7f5f1;
+    font-weight: 500;
+  }
+
+  .topLogoInfo p {
+    font-size: 12px;
+    color: #f5f7f5f1;
+  }
+
+  /* notification */
+  .notification {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+
+  .notification i {
+    color: #f5f7f5f1;
+  }
 }

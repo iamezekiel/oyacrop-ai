@@ -1,4 +1,5 @@
 import Dashboard from "./pages/dashboard/Dashboard";
+import Result from "./component/resultPanel/Result";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/result" element={<Result />} />
         </Routes>
       </BrowserRouter>
     </div>

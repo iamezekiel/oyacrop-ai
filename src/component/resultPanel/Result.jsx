@@ -1,8 +1,13 @@
 import resultStyles from "./Result.module.css";
+import BottomNav from "../bottomNav/BottomNav";
+// import Header from "../header/Header";
 
 const Result = () => {
   return (
     <div className={resultStyles.cardContainer}>
+      {/* small screen */}
+      {/* <Header /> */}
+
       {/* Header Section */}
       <div className={resultStyles.header}>
         <h2 className={resultStyles.heading}>Analysis Result</h2>
@@ -23,10 +28,7 @@ const Result = () => {
 
       {/* Main Image Banner */}
       <div className={resultStyles.imageWrapper}>
-        <img
-          src="/public/result-panel.jpeg"
-          className={resultStyles.bannerImage}
-        />
+        <img src="/result-panel.jpeg" className={resultStyles.bannerImage} />
       </div>
 
       {/* Metrics List */}
@@ -255,6 +257,9 @@ const Result = () => {
           Share Result
         </button>
       </div>
+
+      {/* small screen  */}
+      <BottomNav />
     </div>
   );
 };

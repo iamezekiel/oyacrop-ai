@@ -253,3 +253,10 @@
   width: 14px;
   height: 14px;
 }
+
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .cardContainer {
+    display: none;
+  }
+}
