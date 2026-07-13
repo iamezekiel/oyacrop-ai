@@ -98,12 +98,12 @@
 }
 
 .uploadImage .messageStatus {
-  margin-left: auto;
+  /* margin-left: auto; */
   align-self: flex-end;
   display: flex;
   gap: 8px;
-  align-items: center;
-  margin-top: 8px;
+  /* align-items: center; */
+  /* margin-top: 8px; */
 }
 
 .uploadImage .messageStatus span {
@@ -226,6 +226,10 @@
   position: relative;
 }
 
+.resultCard .viewResult {
+  display: none;
+}
+
 .statusBadge {
   display: flex;
   align-items: center;
@@ -271,6 +275,7 @@
   color: #1f7a34;
 }
 
+/* input */
 .chatInput input {
   width: 100%;
   padding: 15px;
@@ -300,4 +305,35 @@
   display: flex;
   align-self: center;
   color: white;
+}
+
+/* small screen */
+.mobileBottomNav {
+  display: none;
+}
+
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .chatbox {
+    width: 100%;
+  }
+
+  .uploadImage {
+    width: 100%;
+  }
+
+  .messageCard,
+  .loadingCard,
+  .resultCard {
+    width: 100%;
+  }
+
+  .userMessage {
+    width: 90%;
+  }
+
+  .resultCard .viewResult {
+    display: flex;
+    color: #1f7a34;
+  }
 }

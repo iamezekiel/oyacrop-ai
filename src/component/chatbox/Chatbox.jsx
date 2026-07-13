@@ -1,5 +1,7 @@
 import React from "react";
 import chatboxStyles from "./chatbox.module.css";
+import { Link } from "react-router-dom";
+import BottomNav from "../bottomNav/BottomNav";
 
 const Chatbox = () => {
   return (
@@ -65,7 +67,7 @@ const Chatbox = () => {
         <img src="/logo.jpeg" alt="ai-logo" />
         <div className={`${chatboxStyles.resultCard}`}>
           <p>Analysis complete for</p>
-          <div className={chatboxStyles.statusBadge}>
+          <div className={`${chatboxStyles.statusBadge}`}>
             <h4>Cassava (Manihot esculenta)</h4>
             <svg
               className={chatboxStyles.statusIcon}
@@ -79,6 +81,12 @@ const Chatbox = () => {
             </svg>
           </div>
           <p>Here is what I found</p>
+
+          <Link to="/result" className={`${chatboxStyles.viewResult}`}>
+            <i className="fa fa-table" aria-hidden="true"></i>
+            <span> View Result</span>
+          </Link>
+
           <div className={`${chatboxStyles.messageTime}`}>
             <span>14:02</span>
           </div>
@@ -105,6 +113,9 @@ const Chatbox = () => {
           <i class="fa fa-paper-plane" aria-hidden="true"></i>
         </button>
       </div>
+
+      {/* small screen bottom navbar */}
+      <BottomNav />
     </div>
   );
 };

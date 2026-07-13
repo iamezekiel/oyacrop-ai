@@ -1,17 +1,26 @@
 import { useState } from "react";
 import resultStyles from "./Result.module.css";
+import BottomNav from "../bottomNav/BottomNav";
+// import Header from "../header/Header";
 
 const Result = () => {
   // State to track if the layout adjustments or side-drawer are toggled on tablet
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+<<<<<<< HEAD
     /* Combines base styling with conditional tablet layout class if toggled open */
     <div
       className={`${resultStyles.cardContainer} ${
         isMenuOpen ? resultStyles.sidebarOpen : ""
       }`}
     >
+=======
+    <div className={resultStyles.cardContainer}>
+      {/* small screen */}
+      {/* <Header /> */}
+
+>>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
       {/* Header Section */}
       <div className={resultStyles.header}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -71,11 +80,15 @@ const Result = () => {
 
       {/* Main Image Banner */}
       <div className={resultStyles.imageWrapper}>
+<<<<<<< HEAD
         <img
           src="/public/result-panel.jpeg"
           className={resultStyles.bannerImage}
           alt="Analysis Panel Banner"
         />
+=======
+        <img src="/result-panel.jpeg" className={resultStyles.bannerImage} />
+>>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
       </div>
 
       {/* Metrics List */}
@@ -304,6 +317,9 @@ const Result = () => {
           Share Result
         </button>
       </div>
+
+      {/* small screen  */}
+      <BottomNav />
     </div>
   );
 };

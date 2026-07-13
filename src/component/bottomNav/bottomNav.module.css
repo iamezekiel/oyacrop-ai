@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mobileBottomNav {
+  display: none;
+}
+
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .mobileBottomNav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+    border: 0.5px solid #2d354127;
+    padding: 10px;
+  }
+
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+    color: #6b7280;
+  }
+
+  .menuItem:hover {
+    color: #1f7a34;
+  }
+
+  .menuItem span {
+    font-size: 15px;
+  }
+
+  .menuItem i {
+    font-size: 20px;
+  }
+
+  /* image middle */
+  .mobileImageUpload {
+    width: 50px;
+    height: 50px;
+    background-color: #1f7a34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .mobileImgBtn i {
+    cursor: pointer;
+    font-size: 26px;
+    display: flex;
+    align-self: center;
+    color: #f5f7f5f1;
+  }
+}

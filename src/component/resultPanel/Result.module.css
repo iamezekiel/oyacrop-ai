@@ -255,6 +255,7 @@
   height: 14px;
 }
 
+<<<<<<< HEAD
 /* ==========================================================================
    TABLET LAYOUT ADAPTATIONS (Targets your section between 768px and 1024px)
    ========================================================================== */
@@ -307,4 +308,11 @@
   to {
     transform: translateX(0);
   }
+=======
+/* oya farm responsiveness starts */
+@media (max-width: 768px) {
+  .cardContainer {
+    display: none;
+  }
+>>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
 }
