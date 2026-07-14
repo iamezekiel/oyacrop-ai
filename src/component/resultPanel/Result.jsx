@@ -1,67 +1,14 @@
-import { useState } from "react";
 import resultStyles from "./Result.module.css";
 import BottomNav from "../bottomNav/BottomNav";
 // import Header from "../header/Header";
-
 const Result = () => {
   // State to track if the layout adjustments or side-drawer are toggled on tablet
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-<<<<<<< HEAD
-    /* Combines base styling with conditional tablet layout class if toggled open */
-    <div
-      className={`${resultStyles.cardContainer} ${
-        isMenuOpen ? resultStyles.sidebarOpen : ""
-      }`}
-    >
-=======
-    <div className={resultStyles.cardContainer}>
-      {/* small screen */}
-      {/* <Header /> */}
-
->>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
+    <div className={`${resultStyles.cardContainer} `}>
       {/* Header Section */}
       <div className={resultStyles.header}>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          {/* Hamburger Trigger (Visible on tablets via CSS module overrides) */}
-          <button
-            className={resultStyles.hamburger}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle Navigation Menu"
-          >
-            {isMenuOpen ? (
-              /* Close Icon (✕) */
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-              >
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            ) : (
-              /* Hamburger Bars Icon (☰) */
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-              >
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-            )}
-          </button>
-
-          <h2 className={resultStyles.heading}>Analysis Result</h2>
-        </div>
+        <h2 className={resultStyles.heading}>Analysis Result</h2>
 
         <span className={resultStyles.statusBadge}>
           Complete
@@ -80,15 +27,11 @@ const Result = () => {
 
       {/* Main Image Banner */}
       <div className={resultStyles.imageWrapper}>
-<<<<<<< HEAD
         <img
-          src="/public/result-panel.jpeg"
+          src="/result-panel.jpeg"
           className={resultStyles.bannerImage}
           alt="Analysis Panel Banner"
         />
-=======
-        <img src="/result-panel.jpeg" className={resultStyles.bannerImage} />
->>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
       </div>
 
       {/* Metrics List */}

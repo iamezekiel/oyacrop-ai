@@ -255,7 +255,6 @@
   height: 14px;
 }
 
-<<<<<<< HEAD
 /* ==========================================================================
    TABLET LAYOUT ADAPTATIONS (Targets your section between 768px and 1024px)
    ========================================================================== */
@@ -272,34 +271,6 @@
   z-index: 100;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Reveal the hamburger trigger on tablet viewports */
-  .hamburger {
-    display: inline-block;
-  }
-
-  /* Target the sidebar component to hide it on tablets initially */
-  .sidebar {
-    display: none;
-  }
-
-  /* Pop-out overlay panel styling when you toggle the hamburger button open */
-  .sidebarOpen {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100vh;
-    background-color: #ffffff;
-    border-right: 1px solid #f0f0f0;
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05);
-    z-index: 99;
-    padding-top: 60px; /* Gives room so content sits nicely below your trigger */
-    animation: slideIn 0.3s ease forwards;
-  }
-}
-
 /* Smooth entry effect for the tablet sidebar sliding out */
 @keyframes slideIn {
   from {
@@ -308,11 +279,11 @@
   to {
     transform: translateX(0);
   }
-=======
+}
+
 /* oya farm responsiveness starts */
 @media (max-width: 768px) {
   .cardContainer {
-    display: none;
+    /* display: none; */
   }
->>>>>>> 9caa50ca4af44e5768e18ddde05770089eeab693
 }
