@@ -27,13 +27,28 @@ body {
   padding: 20px;
 }
 
-/* oya farm responsiveness starts */
-@media (max-width: 768px) {
+.deskstopResult {
+  display: block;
+}
+
+/* oya farm responsiveness for tablet starts */
+@media (max-width: 1300px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* oya farm responsiveness for mobile starts */
+@media (max-width: 769px) {
   .dashboard {
     grid-template-columns: 1fr;
   }
 
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .deskstopResult {
+    display: none;
   }
 }

@@ -1,0 +1,35 @@
+.chatPage {
+  background: #f6f8f6;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.header button {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chatbox {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .uploadImage,
+  .userMessage,
+  .messageCard,
+  .loadingCard,
+  .resultCard {
+    width: 100%;
+  }
+}

@@ -10,12 +10,14 @@ const Dashboard = () => {
 
   return (
     <div className={`${dashboardStyles.dashboard}`}>
-      <Sidebar isOpen={isOpen} />
+      <Sidebar setIsOpen={setIsOpen} isOpen={isOpen} overlay={false} />
       <div className={`${dashboardStyles.mainContent}`}>
         <Header setIsOpen={setIsOpen} isOpen={isOpen} />
         <div className={`${dashboardStyles.content}`}>
           <Chatbox />
-          <Result />
+          <div className={`${dashboardStyles.deskstopResult}`}>
+            <Result setIsOpen={setIsOpen} isOpen={isOpen} />
+          </div>
         </div>
       </div>
     </div>

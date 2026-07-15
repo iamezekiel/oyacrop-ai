@@ -23,10 +23,26 @@ const Header = ({ isOpen, setIsOpen }) => {
             <p>Harvest Prediction Assistant</p>
           </div>
         </div>
+
+        {/* Mobilenotification */}
+        <div className={`${headerStyles.mobileNotification}`}>
+          <i className="fa-regular fa-bell"></i>
+          <span>3</span>
+        </div>
       </div>
 
       {/* heeader for website starts */}
       <header className={`${headerStyles.header}`}>
+        {/* hambuger div  */}
+        <div
+          className={headerStyles.tabletHambuger}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
         <div className={`${headerStyles.navLeft}`}>
           <h3>Good afternoon, Precious!👋</h3>
           <p>How can i help with your farm today?</p>

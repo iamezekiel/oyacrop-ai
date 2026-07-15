@@ -1,7 +1,7 @@
 import sidebarStyles from "./sidebar.module.css";
 import { Link } from "react-router-dom";
 
-const Sidebar = ({ isOpen }) => {
+const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className={`${sidebarStyles.sidebar} ${
@@ -22,7 +22,10 @@ const Sidebar = ({ isOpen }) => {
           <p>New Analysis</p>
         </button>
 
-        <i className="fa-solid fa-square-xmark"></i>
+        <div className={sidebarStyles.cancel} onClick={() => setIsOpen(false)}>
+          {/* <i className="cancel fa-solid fa-square-xmark"></i> */}
+          &times;
+        </div>
       </div>
 
       <div className={`${sidebarStyles.sideMenu}`}>

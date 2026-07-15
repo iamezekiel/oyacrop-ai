@@ -1,11 +1,30 @@
 import resultStyles from "./Result.module.css";
 import BottomNav from "../bottomNav/BottomNav";
-// import Header from "../header/Header";
+import { useNavigate } from "react-router-dom";
+
 const Result = () => {
-  // State to track if the layout adjustments or side-drawer are toggled on tablet
+  const navigate = useNavigate();
 
   return (
     <div className={`${resultStyles.cardContainer} `}>
+      {/* small screen only header starts */}
+      <div className={`${resultStyles.mobileHeader}`}>
+        {/* hambuger div  */}
+        <div className={resultStyles.hambuger} onClick={() => navigate(-1)}>
+          <i className="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div className={`${resultStyles.topLogo}`}>
+          <h3>Analysis Result</h3>
+        </div>
+
+        {/* notification */}
+        <div className={`${resultStyles.notification}`}>
+          <i className="fa-regular fa-bell"></i>
+          <span>3</span>
+        </div>
+      </div>
+
       {/* Header Section */}
       <div className={resultStyles.header}>
         <h2 className={resultStyles.heading}>Analysis Result</h2>
