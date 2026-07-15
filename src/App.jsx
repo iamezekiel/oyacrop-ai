@@ -15,9 +15,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/result" element={<Result />} />
 
-          <Route path="/login" element={<Login />} />
+          <Route path="/auth" element={<Login />} />
 
-          <Route path="/history" element={<History />} />
+          <Route path="/dashboard/history" element={<History />} />
           <Route path="/chat" element={<Chatbox />} />
         </Routes>
       </BrowserRouter>

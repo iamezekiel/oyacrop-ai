@@ -53,7 +53,7 @@ const Home = () => {
         </div>
 
         <div className={homeStyles.heroImage}>
-          <img src="./hero.png" alt="hero" />
+          <img src="/hero.png" alt="hero" />
         </div>
       </section>
 

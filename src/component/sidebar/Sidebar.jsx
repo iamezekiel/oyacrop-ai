@@ -39,17 +39,20 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           <span>Dashboard</span>
         </Link>
 
-        <Link to="/history" className={`${sidebarStyles.menuItem}`}>
+        <Link to="/dashboard/history" className={`${sidebarStyles.menuItem}`}>
           <i className="fa fa-history" aria-hidden="true"></i>
           <span>History</span>
         </Link>
 
-        <Link to="/setting" className={`${sidebarStyles.menuItem}`}>
+        <Link to="/dashboard/setting" className={`${sidebarStyles.menuItem}`}>
           <i className="fa fa-cog" aria-hidden="true"></i>
           <span>Settings</span>
         </Link>
 
-        <Link to="/notification" className={`${sidebarStyles.menuItem}`}>
+        <Link
+          to="/dashboard/notification"
+          className={`${sidebarStyles.menuItem}`}
+        >
           <i className="fa-regular fa-bell"></i>
           <span>Notifications</span>
         </Link>
