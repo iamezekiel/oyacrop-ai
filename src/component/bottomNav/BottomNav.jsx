@@ -20,7 +20,7 @@ const BottomNav = () => {
           htmlFor="mobileImageUpload"
           className={`${bottomNavStyles.mobileImgBtn}`}
         >
-          <i className="fa-regular fa-camera"></i>
+          <i class="fa-solid fa-camera"></i>
         </label>
 
         <input type="file" id="mobileImageUpload" accept="image/*" hidden />

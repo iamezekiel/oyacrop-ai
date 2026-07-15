@@ -13,6 +13,10 @@
   display: none;
 }
 
+.tabletHambuger {
+  display: none;
+}
+
 /* header styling starts */
 .header {
   display: flex;
@@ -106,7 +110,31 @@
   left: 9px;
 }
 
-/* oya farm responsiveness starts */
+/* oya farm responsiveness for tablet starts */
+@media (max-width: 1300px) {
+  .location {
+    display: none;
+  }
+
+  .weather {
+    display: none;
+  }
+
+  .tabletHambuger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .tabletHambuger div {
+    background-color: black;
+    width: 16px;
+    height: 2px;
+  }
+}
+
+/* oya farm responsiveness mobile starts */
 @media (max-width: 768px) {
   .location {
     display: none;
@@ -134,7 +162,7 @@
     display: flex;
     background-color: #1f7a34;
     padding: 20px;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -169,12 +197,24 @@
 
   /* notification */
   .notification {
-    position: absolute;
-    top: 40px;
-    right: 10px;
+    display: none;
   }
 
-  .notification i {
+  .mobileNotification i {
+    font-size: 25px;
     color: #f5f7f5f1;
+  }
+
+  .mobileNotification span {
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: rgb(230, 26, 26);
+    padding: 0.9px 3px;
+    display: flex;
+    color: #f5f7f5f1;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 18px;
   }
 }

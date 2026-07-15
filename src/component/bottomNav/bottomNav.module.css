@@ -12,7 +12,7 @@
 @media (max-width: 768px) {
   .mobileBottomNav {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
     border: 0.5px solid #2d354127;
@@ -58,5 +58,24 @@
     display: flex;
     align-self: center;
     color: #f5f7f5f1;
+  }
+}
+
+/* oya farm responsiveness starts */
+@media (max-width: 510px) {
+  .mobileBottomNav {
+    /* gap: 20px; */
+  }
+
+  .menuItem span {
+    font-size: 11px;
+  }
+
+  .menuItem i {
+    font-size: 11px;
+  }
+
+  .mobileImgBtn i {
+    font-size: 23px;
   }
 }

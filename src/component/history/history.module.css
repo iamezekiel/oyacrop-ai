@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.historyPage {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.history {
+  background-color: #f6f8f6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* input */
+.searchForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox {
+  position: relative;
+  width: 50%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 15px 50px 15px 15px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #dde2dd9f;
+}
+
+.searchBox button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hambuger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.hambuger div {
+  background-color: black;
+  width: 17px;
+  height: 2px;
+}
+
+/* cards starts */
+.historyCards {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.historyCard {
+  display: flex;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.historyCard .cardLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardLeft .cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardHeader .greenBkg {
+  background-color: #99e7609f;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 17px;
+  color: #0e3b1e;
+  font-weight: 600;
+}
+
+.cardHeader .orangeBkg {
+  background-color: #e7c3609f;
+  width: 160px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 17px;
+  color: #362e0b;
+  font-weight: 600;
+}
+
+.cardHeader .redBkg {
+  background-color: #e786609f;
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 17px;
+  color: #a33013;
+  font-weight: 600;
+}
+
+.historyCard img {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cardMeta {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  color: #8a8a8a;
+}
+
+.cardActions {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cardActions button {
+  border: none;
+  color: #f5f7f5f1;
+  padding: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardActions button:nth-child(1) {
+  background-color: green;
+}
+
+.cardActions button:nth-child(2) {
+  background-color: red;
+}
+
+h5 {
+  text-align: center;
+}
+
+.bottomNav {
+  display: none;
+}
+
+/* oya farm responsiveness for tablet starts */
+@media (max-width: 1300px) {
+  .historyCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottomNav {
+    display: flex;
+  }
+  /* 
+  .cardLeft {
+    flex-direction: column;
+  } */
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .cardHeader h3 {
+    font-size: 15px;
+  }
+
+  .hambuger {
+    display: flex;
+  }
+
+  .historyPage {
+    grid-template-columns: 1fr;
+  }
+
+  .searchBox {
+    width: 70%;
+  }
+
+  .searchBox button {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-100%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}

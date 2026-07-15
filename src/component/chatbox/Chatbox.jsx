@@ -83,7 +83,7 @@ const Chatbox = () => {
           <p>Here is what I found</p>
 
           <Link to="/result" className={`${chatboxStyles.viewResult}`}>
-            <i className="fa fa-table" aria-hidden="true"></i>
+            {/* <i className="fa fa-table" aria-hidden="true"></i> */}
             <span> View Result</span>
           </Link>
 

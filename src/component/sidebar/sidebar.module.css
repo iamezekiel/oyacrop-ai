@@ -61,6 +61,10 @@
   cursor: pointer;
 }
 
+.cancel {
+  display: none;
+}
+
 /* sidebar logo styling starts */
 
 /* side menu(links) styling starts */
@@ -175,8 +179,8 @@
 }
 /* side profile styling ends */
 
-/* oya farm responsiveness starts */
-@media (max-width: 768px) {
+/* oya farm responsiveness for tablet starts */
+@media (max-width: 1300px) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -189,4 +193,16 @@
   .sidebarOpen {
     left: 0;
   }
+
+  .cancel {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    font-size: 27px;
+  }
+}
+
+/* oya farm responsiveness mobile starts */
+@media (max-width: 768px) {
 }
