@@ -101,7 +101,7 @@ const Chatbox = () => {
             <i className="fa-regular fa-image"></i>
           </label>
 
-          <input type="file" id="imageUpload" accept="image/" hidden />
+          <input type="file" id="imageUpload" accept="image/*" hidden />
         </div>
 
         <input
@@ -110,7 +110,7 @@ const Chatbox = () => {
         />
 
         <button className={`${chatboxStyles.chatInputSend}`}>
-          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <i className="fa fa-paper-plane" aria-hidden="true"></i>
         </button>
       </div>
 

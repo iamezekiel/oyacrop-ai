@@ -120,7 +120,7 @@
 /* user message */
 .userMessage {
   width: 70%;
-  position: absolutes;
+  /* position: absolute; */
   background-color: #1f7a34;
   padding: 15px;
   color: #f5f7f5f1;

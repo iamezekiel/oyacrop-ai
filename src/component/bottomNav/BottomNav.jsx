@@ -20,13 +20,13 @@ const BottomNav = () => {
           htmlFor="mobileImageUpload"
           className={`${bottomNavStyles.mobileImgBtn}`}
         >
-          <i class="fa-solid fa-camera"></i>
+          <i className="fa-solid fa-camera"></i>
         </label>
 
         <input type="file" id="mobileImageUpload" accept="image/*" hidden />
       </div>
 
-      <Link to="/history" className={`${bottomNavStyles.menuItem}`}>
+      <Link to="/dashboard/history" className={`${bottomNavStyles.menuItem}`}>
         <i className="fa fa-history" aria-hidden="true"></i>
         <span>History</span>
       </Link>
