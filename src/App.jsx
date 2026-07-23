@@ -4,6 +4,8 @@ import Result from "./component/resultPanel/Result";
 import Login from "./pages/login/Login";
 import Chatbox from "./pages/chatboxPage/ChatboxPage";
 import Home from "./pages/home/Home";
+import Settings from "./pages/settings/Settings";
+import Notification from "./pages/notification/Notification";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
 
           <Route path="/dashboard/history" element={<History />} />
           <Route path="/chat" element={<Chatbox />} />
+          <Route path="/dashboard/settings" element={<Settings />} />
+          <Route path="/dashboard/notification" element={<Notification />} />
         </Routes>
       </BrowserRouter>
     </div>

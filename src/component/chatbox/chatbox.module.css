@@ -74,6 +74,7 @@
 
 .fileInfo {
   flex: 1;
+  min-width: 0;
 }
 
 .uploadImage img {
@@ -301,7 +302,7 @@
 
 .chatInputSend i {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   align-self: center;
   color: white;

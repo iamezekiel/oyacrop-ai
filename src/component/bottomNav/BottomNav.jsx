@@ -31,7 +31,10 @@ const BottomNav = () => {
         <span>History</span>
       </Link>
 
-      <Link to="/user" className={`${bottomNavStyles.menuItem}`}>
+      <Link
+        to="/user"
+        className={`${bottomNavStyles.menuItem} ${bottomNavStyles.profile450}`}
+      >
         <i className="fa fa-user" aria-hidden="true"></i>
         <span>Profile</span>
       </Link>

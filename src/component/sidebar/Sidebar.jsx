@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           <span>History</span>
         </Link>
 
-        {/* <Link to="/dashboard/setting" className={`${sidebarStyles.menuItem}`}>
+        <Link to="/dashboard/settings" className={`${sidebarStyles.menuItem}`}>
           <i className="fa fa-cog" aria-hidden="true"></i>
           <span>Settings</span>
         </Link>
@@ -55,7 +55,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         >
           <i className="fa-regular fa-bell"></i>
           <span>Notifications</span>
-        </Link> */}
+        </Link>
       </div>
 
       <div className={`${sidebarStyles.sideCard}`}>

@@ -221,20 +221,20 @@
     /* line-height: 1; */
 
     position: absolute;
-    top: 23px;
-    right: -5px;
+    top: 18px;
+    right: 7px;
     /* left: 10px; */
-  }
-}
-
-/* @media (max-width: 450px) {
-  .mobileNotification span {
-    top: 23px;
-    right: -2px;
-    background-color: #1f2937;
   }
 
   .tabletHambuger {
     display: none;
   }
-} */
+}
+
+@media (max-width: 450px) {
+  /* .mobileNotification span {
+    top: 23px;
+    right: -2px;
+    background-color: #1f2937;
+  } */
+}

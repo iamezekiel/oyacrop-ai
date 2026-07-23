@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.settingsPage {
+  background: #f6f8f6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.header button {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #1f7a34;
+}
+
+.header h2 {
+  color: #1f2937;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1f7a34;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eef1ef;
+  padding-bottom: 12px;
+}
+
+.info span {
+  color: #6b7280;
+}
+
+.info strong {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.setting span {
+  color: #1f2937;
+}
+
+.card button {
+  margin-top: 8px;
+  border: none;
+  background: #1f7a34;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logout {
+  width: 100%;
+  margin-top: 10px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: #1f7a34;
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .settingsPage {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
