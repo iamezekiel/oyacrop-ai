@@ -32,7 +32,7 @@ const BottomNav = () => {
       </Link>
 
       <Link
-        to="/user"
+        to="/dashboard/settings"
         className={`${bottomNavStyles.menuItem} ${bottomNavStyles.profile450}`}
       >
         <i className="fa fa-user" aria-hidden="true"></i>
