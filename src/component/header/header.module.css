@@ -91,6 +91,8 @@
 .notification {
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .notification i {
@@ -201,6 +203,10 @@
   /* notification */
   .notification {
     display: none;
+  }
+
+  .mobileNotification {
+    text-decoration: none;
   }
 
   .mobileNotification i {

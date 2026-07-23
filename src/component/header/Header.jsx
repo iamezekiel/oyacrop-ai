@@ -1,5 +1,6 @@
 import React from "react";
 import headerStyles from "./header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = ({ isOpen, setIsOpen }) => {
   return (
@@ -25,10 +26,13 @@ const Header = ({ isOpen, setIsOpen }) => {
         </div>
 
         {/* Mobilenotification */}
-        <div className={`${headerStyles.mobileNotification}`}>
+        <Link
+          to="/dashboard/notification"
+          className={headerStyles.mobileNotification}
+        >
           <i className="fa-regular fa-bell"></i>
           <span>3</span>
-        </div>
+        </Link>
       </div>
 
       {/* heeader for website starts */}
@@ -59,10 +63,13 @@ const Header = ({ isOpen, setIsOpen }) => {
             <span>29°C</span>
           </div>
 
-          <div className={`${headerStyles.notification}`}>
+          <Link
+            to="/dashboard/notification"
+            className={headerStyles.notification}
+          >
             <i className="fa-regular fa-bell"></i>
             <span>3</span>
-          </div>
+          </Link>
         </div>
       </header>
     </div>

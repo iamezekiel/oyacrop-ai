@@ -188,6 +188,7 @@
     width: 280px;
     transition: left 0.3s ease;
     z-index: 1000;
+    height: 100%;
   }
 
   .sidebarOpen {
